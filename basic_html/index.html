@@ -52,6 +52,10 @@
             <br><a href = "http://www.google.com">ใส่ link เข้าไปใน text เพื่อให้ไปเว็บอื่น</a>
             <br><a href = "return.html">ให้ link เข้าหน้าอื่นของเว็บตัวเอง</a>
             <br><a href = "return.html" target = "_blank">กดเช้าไปแล้วมันจะเปิด tab ใหม่ให้เอง</a>
+            <br><abbr title="">เส้นประ</abbr>
+            <br><cite>Cite quote คนอื่น</cite> by Fill
+            <br>ลากเส้นแบ่งหน้า
+            <hr>
         </p>
         
         <!--Lists-->
@@ -105,7 +109,80 @@
             </tbody>
         </table>
 
-        
+        <!-- Forms -->
+        <h1>Forms</h1>
+        <p>
+            คราวนี่เราจะมาลองสร้างแบบ forms กัน
+        </p>
+
+        <form action = "info.php" target = "POST">
+            <!-- action = เข้าไปในไฟล์ไหน target = ให้ทำอะไร, POST = ใส่ข้อมูล, GET = เอาข้อมูล-->
+            <!-- ปกติมันต้องมีไฟล์ php เพื่อ access DB แต่ใน case นี้เรายังไม่มีก็ถ้าเรากด submit มันก็จะพัง-->
+            <div>
+                <label>First name</label>
+                <input type = "text" Fname = "" value="Enter First Name">
+            </div>
+
+            <div>
+                <label>Last name</label>
+                <input type = "text" Lname = "">
+            </div>
+            <!-- type = ชนิดของ input, ส่วนอีกตัวเราใช้เป็นตัวแปลเอาไว้จดข้อมูล -->
+
+            <div>
+                <label>Email</label>
+                <input type="email" email = "">
+            </div>
+
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Age:</label>
+                <input type="number" name = "age">
+            </div>
+
+            <div>
+                <label>Birthday</label>
+                <input type="date" name = "birthday">
+            </div>
+
+            <div>
+                <input type="submit" name="submit">
+            </div>
+        </form>
+
+        <h1>Button</h1>
+        <p>คราวนี้เราจะมาลองใส่ปุ่มให้กับหน้า html ของเรากัน</p>
+        <button>Click Me</button>
+
+        <h1>Image</h1>
+        <p>คราวนี้ลองมาใส่ภาพดูกัน</p>
+        <img src="https://yt3.ggpht.com/-DtaZAfInCk0/AAAAAAAAAAI/AAAAAAAAAAA/_fURjrHT2IY/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="จะขึ้น text ถ้าไม่เจอภาพ">
+        <br>
+        <img src="sample_image/image.png" alt="" width="1000px" height="1000px">
+
+        <!-- Quotation -->
+        <h1>Quote</h1>
+        <p>คราวนี้เราจะมาลอง quote คำพูดจาก source อื่นกัน</p>
+        <blockquote cite="www.sourceOfQuote.com">
+            This is the quote from other site called sourceOfQuote
+        </blockquote>
+
+        <h1>Semantic Tags</h1>
+        <!--Semantic tags-->
+        <br><p>ต่อไปเดี๋ยวเราจะไปดูวิธีจัดเรียงหน้าด้วย HTML semantic tags</p>
+        <a href="semantic.html">กดตรงนี้เพื่อไปดูหน้า html semantic tags</a>
 
     </body>
 </html>
