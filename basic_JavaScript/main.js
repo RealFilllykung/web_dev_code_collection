@@ -22,9 +22,17 @@ let myNumber = 20;
 let mySingleStatus = true;
 let myGF = null;
 let myUndefined = undefined;
+
+//ถ้าเราใช้ var เราต้องประกาศตัวแปลก่อนที่เราจะเอาไปใช้กับ console.log
+var myname = "Fill";
 //undefined คือตัวแปลที่เอาไว้ไม่ให้มันถูกแก้ค่าได้
 
 //Print ว่าตัวแปลนี้เป็นตัวแปลชนิดอะไร
-console.log(typeof(name));
+console.log(typeof name);
 
-
+//อันนี้คือการใช้ console.log แบบเบื้องต้น
+console.log("My name is " + name);
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.substring(0,3).toUpperCase());
