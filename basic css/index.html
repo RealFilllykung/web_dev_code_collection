@@ -6,16 +6,142 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Basic Code</title>
     <!--ปกติเวลาเราทำ CSS เรามักจะทำใน head area ไม่ก็สร้างไฟล์ใหม่เลย-->
+
+    <!--
     <style type="text/css">
         header{
             color: red;
         }
     </style>
+    การทำแบบนี้จะทำให้ั text ใน header ทั้งหมดกลายเป็นสีแดง
+    -->
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--อันนี้คือการอ่านไฟล์ CSS ไฟล์นอกเพื่อเอามาใส่กับ content ที่อยู่ในหน้า html นั้นๆ-->
+    <!--คล้ายๆอารมณ์ประมาณเรียก header ของ CSS ที่เราสร้างเอง อะไรแบบนั้น (ถ้าเทียบกับภาษา C)-->
+
 </head>
 <body>
     <header id="main_header">
         <h1>CSS Basic</h1>
-        <h2 style="color: blue">Inline CSS แต่ไม่แนะนำให้ใช้</h2>
+        <h1 style="color: blue">Inline CSS แต่ไม่แนะนำให้ใช้</h1>
     </header>
+    <p>Lorem Ipsum text นี่แค่อยากให้เห็นเฉยๆว่าถ้าแก้พวก font แล้วจะเป็นยังไง
+        <br>บรรทัดนี้แค่เอาไว้ดูว่า line height มีผลยังไง
+    </p>
+
+    <!--class-->
+    <!-- ถ้าในเชิง html class กับ id ไม่ต่างกันเลย 
+        แต่ถ้าในระดับ CSS id 
+        คือมันจะเป็น unique id ของแต่ละตัวเลย
+        แต่ถ้าเป็น class คือเหมือน class ในภาษา programmin ที่ทำตัวเหมือนเป็น template ไว้ใช้วันอื่น
+    -->
+    <h1>class</h1>
+    <div class="box-1">
+        <p>
+            ตรงบรรทัดนี้เอาไว้ทดลอง class ซึ่งตัว div นี้อยู่ข้างใน body แต่มันจะมี behaviour ของมันเอง
+        </p>
+    </div>
+
+    <div class="container">
+        <p>
+            Area ตรงนี้เป็น text ของ container class
+        </p>
+        <div class="box-1">
+            <p>และเราสามารถเอา div class ซ้อน class ได้ด้วย</p>
+        </div>
+    </div>
+
+    <h1>Margin and Padding</h1>
+    <div>
+        <p>ต่อไปเดี๋ยวเราจะมาดูเรื่องเกี่ยวกับ margin และ padding กัน</p>
+
+        <p class = "margin_style1">
+            <a href="margin_info.html">
+                กดตรงนี้เพื่อดูรายละเอียด margin และ padding
+            </a>
+        </p>
+
+        <p class="margin_border">
+            คราวนี้ลองมาดูกันว่า margin ใช้ร่วมกับ border ยังไงกัน
+            <br>ซึ่ง padding จะทำการทำให้ตัวกล่องมีช่องเว้นว่างในกล่อง
+        </p>
+    </div>
+
+    <div class="box-1">
+        <h1>Margin Custom</h1>
+    </div>
+
+    <div class="box-2">
+        <h1>Box 2 content</h1>
+        <p>อันนี้คือ border อีกอันนึง</p>
+    </div>
+
+    <div class="category1">
+        <ul>
+            <li><a href="#">list1</a></li>
+            <li><a href="index.html">list2</a></li>
+        </ul>
+    </div>
+    
+    <!--การใช้ Form ร่วมกับ CSS-->
+    <h1 style="margin: auto">Form</h1>
+    <div>
+        <form class="my-form">
+            <div class = "form-group">
+                <label for="">Name</label>
+                <input type="text" name="name">
+            </div>
+
+            <div class = "form-group">
+                <label for="">Email</label>
+                <input type="email" name = "email">
+            </div>
+
+            <div class = "form-group">
+                <label for="">Message</label>
+                <textarea name="message"></textarea>
+            </div>
+
+            <div class = "form-group">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <a href=""><button class="my-button">Read More</button></a>
+    </div>
+
+    <!--การแยก block layout ด้วย CSS-->
+    <div class="block">
+        <p>
+            ขึ้นซ้ายสุด
+        </p>
+    </div>
+    <div class="block">
+        <p>กลาง</p>
+    </div>
+    <div class="block">
+        <p>
+            ขวา
+        </p>
+    </div>
+
+    <!--ID กับ CSS-->
+    <div id="main-block">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa sed elementum tempus egestas. Platea dictumst quisque sagittis purus sit amet volutpat. Consequat id porta nibh venenatis cras sed. Sagittis aliquam malesuada bibendum arcu vitae. Elementum integer enim neque volutpat ac tincidunt vitae. Vitae turpis massa sed elementum tempus egestas sed sed risus. Nunc mi ipsum faucibus vitae aliquet nec. Fusce ut placerat orci nulla. Integer vitae justo eget magna fermentum iaculis eu non. Donec et odio pellentesque diam volutpat commodo sed egestas egestas.
+        </p>
+    </div>
+
+    <div id="side-block">
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa sed elementum tempus egestas. Platea dictumst quisque sagittis purus sit amet volutpat. Consequat id porta nibh venenatis cras sed. Sagittis aliquam malesuada bibendum arcu vitae. Elementum integer enim neque volutpat ac tincidunt vitae. Vitae turpis massa sed elementum tempus egestas sed sed risus. Nunc mi ipsum faucibus vitae aliquet nec. Fusce ut placerat orci nulla. Integer vitae justo eget magna fermentum iaculis eu non. Donec et odio pellentesque diam volutpat commodo sed egestas egestas.
+        </p>
+    </div>
+
+    <!--การตัดส่วนที่ไม่จำเป็นออกไปจาก HTML ด้วย CSS-->
+    <div class="clr"></div>
 </body>
 </html>

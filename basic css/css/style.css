@@ -1,3 +1,201 @@
+/*
+    template ของ CSS:
+    link{
+        property: value;
+    }
+*/
+
+/*
 h1{
     color: green;
+}
+อันนี้มันจะ set h1 ทุกอันเป็นสีเชียว
+*/
+
+/*
+อันนี้คือเป็นคำสั่ง reset เพื่อเช็ค vector
+*{
+    margin: 0px;
+    border: 0px;
+}*/
+
+body{
+    background-color: rgb(190, 189, 189);
+    color: whitesmoke; /*color = เปลี่ยนสี text*/
+    font-family: Arial, Helvetica, sans-serif; /*ถ้า Font Arial ไม่ติด จะไปใช้ Helvetica แค่ถ้าไม่ติดอีกก็ไปใช้ sans-serif*/
+    font-size: 16px;
+    font-weight: normal; /*เราสามารถ set ความหน้าของ font ได้ด้วย*/
+
+    /*
+        font: normal 16px Arial,Helvetica,sans-serif;
+        อันนี้จะแสดงอาการเหมือนบรรทัด 18 - 20
+    */
+    line-height: 1.6em; /*แก้ความถ่างของเส้นบรรทัด*/
+}
+
+.box-1{
+    color: black;
+    background-color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 300px;
+}
+
+.container{
+    width: 80%; /* ข้อดีของการตั้งเป็น % คือมันจะ responsive กับการย่อหดของ browser*/
+    background-color: black;
+    color: white;
+    margin: auto; /*margin = ตั้งว่าให้ margin มันอยู่ตรงไหน (auto = ตั้งไปอยู่ตรงกลาง)*/
+}
+
+.margin_style1{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.center_align{
+    margin: auto;
+}
+
+.margin_border{
+    width: 500px;
+    /*
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    อันนี้เหมือน border: 5px red solid;
+    */
+
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    background-color: black;
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    /*
+    อันนี้มันจะ padding ทั้งกรอบเลย
+    padding: 20px;
+    */
+    margin-top: 100px; /*คราวนี้มันจะทำให้ margin ลงไป 100 px*/
+}
+
+/*อันนี้แปลว่าทุกๆ h1 ที่ใช้ class box-1 จะทำตามคำสัั่งในนี้*/
+.box-1 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    margin: auto;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    width: 250px;
+    word-spacing: 5px;
+}
+
+.box-2{
+    border-style: dotted;
+    width:80%;
+    margin: auto;
+}
+
+.box-3{
+    border-style: double;
+    text-decoration: underline;
+}
+
+/*a = ส่งผลกับ a ที่ไม่มี class ที่เป็นเจ้าของ ถ้ามีเจ้าของ, class นั้นจะทำตาม argument ใน class นั้นๆแทน*/
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+a:active{
+    color: green;
+    text-decoration: none;
+}
+
+.margin_style1 a{
+    text-decoration: underline;
+}
+
+.category1{
+    border: 5px black dotted;
+    width: 300px;
+    margin: auto;
+}
+
+.category1 li{
+    border: 2px blue double;
+    border-bottom-style: dotted;
+
+    /*ตรงนี้คือการตั้งให้เม็ดข้างหน้าเป็นภาพแทน*/
+    /* list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/b/bd/Orange_check.svg);*/
+    /*list-style-image: url(../box_detail.PNG);*/
+
+
+}
+
+/*CSS ที่ใช้กับ form*/
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+}
+
+.my-form input, .my-form textarea{
+    padding: 8px;
+    width: 50%;
+}
+
+.my-form input[type="submit"]{
+    background-color: gray;
+    color: white;
+}
+
+/*Button CSS*/
+.my-button:hover{
+    background-color: red;
+}
+
+/*Box CSS*/
+.block{
+    float: left;
+    width: 33.3%;
+    border: 2px black solid;
+    box-sizing: border-box;
+}
+
+/*Clear ขอบที่เหลือในหน้าเว็บ*/
+.clr{
+    clear: both;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    font-size: 30px;
+}
+
+#side-block{
+    float: left;
+    width: 30%;
 }
