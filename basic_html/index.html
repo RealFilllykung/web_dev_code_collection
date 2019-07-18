@@ -35,6 +35,7 @@
         <!-- โซนนี้คือโซนอธิบาย block element กับ inline element -->
 
         <!-- Block Level Element-->
+        <h1>Block Element</h1>
         <p>
             คราวนี้ลองมาดู block element กัน
             block elemets = เริ่มบรรทัดใหม่ + ใช้กรอบ width ที่มันมีทั้งหมด, ถ้า width ไม่พอสำหรับบรรทัดนั้นๆ มันจะเริ่มบรรทัดใหม่เอง 
@@ -42,6 +43,7 @@
         </p>
 
         <!-- Inline Level Element -->
+        <h1>Inline Element</h1>
         <p>
             คราวนี้ลองมาดู <strong> inline element </strong> กัน
             ง่ายๆมันคือการแก้ไขพวก text ใน block element เช่นทำให้ text ติด <strong>bold</strong>
@@ -49,7 +51,61 @@
             <br>ทำให้ text กลายเป็น <em>italic</em>
             <br><a href = "http://www.google.com">ใส่ link เข้าไปใน text เพื่อให้ไปเว็บอื่น</a>
             <br><a href = "return.html">ให้ link เข้าหน้าอื่นของเว็บตัวเอง</a>
+            <br><a href = "return.html" target = "_blank">กดเช้าไปแล้วมันจะเปิด tab ใหม่ให้เอง</a>
         </p>
         
+        <!--Lists-->
+        <h1>Lists</h1>
+        <p>
+            คราวนี้เราจะมาลองสร้างพวก bullet point กัน ซึ่งมันจะมี 2 แบบ
+            <br>1. แบบไม่จัดเรียง (unorder)
+            <br>2. แบบจัเดเรียง (order)
+        </p>
+
+        <h2>unorder list</h2>
+        <ul>
+            <li>แบบไม่ order</li>
+            <li>จะไม่จัดเรียง list</li>
+        </ul>
+
+        <h2>order list</h2>
+        <ol>
+            <li>แบบ order</li>
+            <li>จะมีเลขข้างหน้า</li>
+        </ol>
+
+        <!-- Table -->
+        <h1>Table</h1>
+        <p>
+            คราวนี้ลองมาสร้าง table กัน
+            <br>tr = table row
+            <br>th = table heading
+            <br>td = table data
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>email</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- แต่ละ tr คือแถวของข้อมูลในแต่ละช่องเลย -->
+                    <td>Fill</td>
+                    <td>email@flk.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>No Name</td>
+                    <td>NoEmail@nomail.com</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
     </body>
 </html>
