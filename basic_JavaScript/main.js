@@ -107,6 +107,11 @@ while(todoList.length != 0){
     console.log(todoList.pop());
 }
 
+//forEach
+todoList.forEach((todoList)=>{
+    console.log(todoList);
+});
+
 //if statement
 var x = 20;
 if (x == 10){
