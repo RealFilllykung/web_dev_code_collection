@@ -51,6 +51,12 @@ console.log(OOPArray.pop());
 OOPArray.reverse(); //ทำให้ Stack กลายเป็น queue ด้วยการ reverse
 console.log(OOPArray.pop());
 
+//วิธีสร้าง queue ใน JS
+var myQueue = [];
+myQueue.push(3);
+myQueue.push(4);
+myQueue.shift(); //shift = left shift ง่ายๆคือทำให้ค่าที่อยู่หน้าสุดหลุดออกไป
+
 //วิธีสร้าง object literals (ไม่ใช่ class นะ คิดซะว่าอันนี้คล้ายๆ structure)
 const myPerson = {
     fname: "Tharathep",
