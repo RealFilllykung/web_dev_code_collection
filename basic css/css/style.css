@@ -199,3 +199,46 @@ a:active{
     float: left;
     width: 30%;
 }
+
+.p-box{
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    margin-top: 400px;
+    position: relative;
+}
+
+.p-box h1{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.p-box h2{
+    position: absolute;
+    left: 30%;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+    border: 0px none;
+    width: 60px;
+    height: 30px;
+    background-color: brown;
+    text-align: center;
+}
+
+.custom-list li:first-child{
+    background-color: red;
+}
+
+.custom-list li:last-child{
+    background-color: wheat;
+}
+
+.custom-list li:nth-child(2){
+    background-color: blueviolet;
+}
