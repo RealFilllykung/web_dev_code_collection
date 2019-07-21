@@ -1,0 +1,22 @@
+.welcome{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0px;
+    text-align: center;
+    width: 25%;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+.deposit-block{
+    margin-top: 10px;
+    width: 25%;
+    border: 1px none;
+    text-align: center;
+}
+
+.deposit-block input[type="submit"]{
+    border: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gray;
+}
